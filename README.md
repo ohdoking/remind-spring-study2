@@ -15,10 +15,19 @@ spring boot 를 사용하여 aop를 구현해본다.
 클래스 레벨에 @Order를 명시하여 @Aspect 빈 간의 작동 순서를 정할 수 있다. int 타입의 정수로 순서를 정할 수 있는데 값이 낮을수록 우선순위가 높다. 기본값은 가장 낮은 우선순위를 가지는 Ordered.LOWEST_PRECEDENCE이다.
 @Aspect가 명시된 빈에는 어드바이스(Advice)라 불리는 메써드를 작성할 수 있다. 대상 스프링 빈의 메써드의 호출에 끼어드는 시점과 방법에 따라 @Before, @After, @AfterReturning, @AfterThrowing, @Around 등을 명시할 수 있다.
 
+#### 용어 정리
+
+- joinpoint
+	- aspect가 실행될수 있는 모든 곳
+- pointcut
+	- aspect가 실행되는 특정 위치
 
 
 ## 참고
 
 - http://jsonobject.tistory.com/247 [지단로보트의 블로그]
+- http://www.baeldung.com/spring-aop-pointcut-tutorial
+- http://devjms.tistory.com/70
+- https://spring.io/guides/gs/serving-web-content/
 
 
