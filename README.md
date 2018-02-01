@@ -1,11 +1,11 @@
-#Remind Spring
+# Remind Spring
 
-##개요
+## 개요
 
 spring boot 를 사용하여 aop를 구현해본다.
 
-##설명
-###공부
+## 설명
+### 공부
 
 #### @EnableAspectAutoProxy
 - XML 기반의 ApplicationContext 설정에서의 <aop:aspectj-autoproxy />와 동일한 기능을 한다.
